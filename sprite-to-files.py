@@ -9,7 +9,6 @@ sourceFilePath = os.path.join(sourceFolderPath, 'example.svg') # your SVG sprite
 tree = et.parse(sourceFilePath)
 root = tree.getroot()
 symbolsList = list()
-symbolID = 0
 
 def elementToString(element):
     s = element.text or ""
